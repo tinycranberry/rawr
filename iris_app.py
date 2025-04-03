@@ -22,7 +22,7 @@ petal_width = st.slider("Petal width (cm)", 0.1, 3.0, 1.3)
 #Predift
 input_data = np.array([[sepal_length, sepal_width, petal_length, petal_width]])
 input_scaled = scaler.transform(input_data)
-prediciton = model.predict(input_scaled)[0]
+prediction = model.predict(input_scaled)[0]
 
 labels = ["Iris-setosa", "Iris-versicolor", "Iris-virginica"]
 st.subheader("Prediciton: ")
